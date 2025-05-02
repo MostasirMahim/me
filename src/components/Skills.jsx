@@ -31,14 +31,7 @@ const SkillsSection = () => {
       icon: Code2,
       title: "Frontend Development",
       color: "text-blue-400",
-      skills: [
-        "React",
-        "Next.js",
-        "Tailwind CSS",
-        "Zustand",
-        "HTML5",
-        "CSS3",
-      ],
+      skills: ["React", "NextJS", "Tailwind CSS", "Zustand", "Shadcn", "DaisyUI"],
     },
     {
       icon: Database,
@@ -46,7 +39,7 @@ const SkillsSection = () => {
       color: "text-green-400",
       skills: [
         "Node.js",
-        "Express",
+        "ExpressJS",
         "PostgreSQL",
         "MongoDB",
         "TanStack",
@@ -63,7 +56,7 @@ const SkillsSection = () => {
       icon: Cloud,
       title: "Cloud & DevOps",
       color: "text-orange-400",
-      skills: ["Render", "Docker", "Netlify", "Git", "GitHub"],
+      skills: ["Render", "Vercel", "Netlify", "Git", "GitHub"],
     },
     {
       icon: Cpu,
@@ -87,14 +80,17 @@ const SkillsSection = () => {
         "RESTful APIs & WebSockets",
         "Performance Optimization",
         "Authentication & Security",
-        "Database Managemen",
+        "Database Management",
       ],
     },
   ];
 
   return (
-    <main className="pt-20 lg:pt-0 bg-[#0f1629] text-white min-h-screen">
-      <section className="container mx-auto px-4 py-16">
+    <main className="sm:pt-16 lg:pt-0 bg-[#0f1629] text-white min-h-screen">
+      <section className="container mx-auto p-4">
+        <h2 className="sm:hidden text-4xl text-center md:text-6xl font-extrabold text-transparent bg-gradient-to-br from-indigo-400 via-purple-400 to-pink-500 bg-clip-text">
+          My Skills
+        </h2>
         <div className="flex justify-center items-center">
           <IconCloudDemo />
         </div>

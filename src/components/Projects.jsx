@@ -1,9 +1,9 @@
-
 import { Github, ExternalLink } from "lucide-react";
 import maraz from "../assets/images/maraz1.png";
 import mahimx from "../assets/images/mahimx1.png";
 import whatsup from "../assets/images/whtasup.png";
 import mahimai from "../assets/images/mahimai.png";
+import Geng from "../assets/images/geng.png";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const MacOsButtons = () => (
@@ -17,13 +17,44 @@ const MacOsButtons = () => (
 const ProjectShowcase = () => {
   const projects = [
     {
+      title: "The Daily Gen-G - Newsletter",
+      description:
+        "The Daily Gen-G is a news website that features a fully functional admin dashboard, blog cretetion, user authentication, posts, likes, comments management,follow system and dark mode.",
+      tags: [
+        "NextJs",
+        "TypeScript",
+        "Tailwind",
+        "PostgreSQL",
+        "Prisma",
+        "Clerk",
+        "Neon",
+        "Shadcn",
+      ],
+      links: {
+        github: "https://github.com/MostasirMahim/BlogPortal",
+        demo: "https://daily-geng.vercel.app/",
+      },
+      image: Geng,
+      featured: true,
+    },
+    {
       title: "Maraz - A Multi-Seller E-Commerce Platform",
       description:
         "Maraz is a multi-seller e-commerce platform that features a fully functional shop admin dashboard, super admin panel, message system, product management, order tracking, review management, cart, wishlist and excel file export.",
-      tags: ["Vite", "Tailwind", "MongoDB", "Express", "Socket.io", "Zustand", "Formik-Yup", "JWT","xlsx"],
+      tags: [
+        "Vite",
+        "Tailwind",
+        "MongoDB",
+        "Express",
+        "Socket.io",
+        "Zustand",
+        "Formik-Yup",
+        "JWT",
+        "xlsx",
+      ],
       links: {
         github: "https://github.com/MostasirMahim/Maraz-Source-Code",
-        demo: "maraz.onrender.com",
+        demo: "https://maraz.onrender.com",
       },
       image: maraz,
       featured: true,
@@ -32,7 +63,16 @@ const ProjectShowcase = () => {
       title: "MahimX - Social Media Platform",
       description:
         "MahimX is a social media platform like Twitter(X) that allows users to create, share, send messages and manage their own posts, comments, and reactions. Users can also interact with other users through messages, comments and reactions.",
-      tags: ["Vite", "Tailwind", "MongoDB", "Express", "Socket.io", "DaisyUI", "JWT","React-Modal"],
+      tags: [
+        "Vite",
+        "Tailwind",
+        "MongoDB",
+        "Express",
+        "Socket.io",
+        "DaisyUI",
+        "JWT",
+        "React-Modal",
+      ],
       links: {
         github: "https://github.com/MostasirMahim/Twitter-Clone",
         demo: "https://mahimx.onrender.com",
@@ -44,7 +84,16 @@ const ProjectShowcase = () => {
       title: "WhtasUp - Realtime Chat Application",
       description:
         "WhtasUp is a realtime chat application like WhatsApp that allows users to send messages and share files with their friends.",
-      tags: ["Vite", "Tailwind", "MongoDB Atlas", "Express", "Socket.io", "DaisyUI", "JWT","Zustand"],
+      tags: [
+        "Vite",
+        "Tailwind",
+        "MongoDB Atlas",
+        "Express",
+        "Socket.io",
+        "DaisyUI",
+        "JWT",
+        "Zustand",
+      ],
       links: {
         github: "https://github.com/MostasirMahim/Whatsapp-Clone",
         demo: "https://whatsup-mmco.onrender.com",
@@ -56,7 +105,14 @@ const ProjectShowcase = () => {
       title: "MahimAI - AI Chatbot Powered by Gemini",
       description:
         "MahimAI is an AI chatbot that is powered by Gemini, a powerful AI engine that can understand and respond to user queries. MahimAI can provide information, answer questions, and even save chats on browser local storage.",
-      tags: ["Vite", "Tailwind", "LocalStorage", "SessionStorage", "Gemini", "Flash-1.5"],
+      tags: [
+        "Vite",
+        "Tailwind",
+        "LocalStorage",
+        "SessionStorage",
+        "Gemini",
+        "Flash-1.5",
+      ],
       links: {
         github: "https://github.com/MostasirMahim/Chatbot",
         demo: "https://mahimai.netlify.app",
@@ -67,7 +123,10 @@ const ProjectShowcase = () => {
   ];
 
   return (
-    <div className="pt-40 min-h-screen bg-[#0f1629] p-8 text-slate-100">
+    <div className="sm:pt-40 min-h-screen bg-[#0f1629] p-8 text-slate-100 ">
+      <h2 className="sm:hidden text-4xl py-4 text-center md:text-6xl font-extrabold text-transparent bg-gradient-to-br from-indigo-400 via-purple-400 to-pink-500 bg-clip-text">
+        My Projects
+      </h2>
       <div className="max-w-7xl mx-auto space-y-12">
         {projects.map((project, index) => (
           <div
@@ -79,7 +138,7 @@ const ProjectShowcase = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-full object-cover overflow-hidden group-hover:scale-110 transition-transform duration-500"
               />
             </div>
 
@@ -91,7 +150,9 @@ const ProjectShowcase = () => {
                 <div className="flex justify-between items-start">
                   <div>
                     <div className="text-emerald-400 text-sm font-mono mb-2 tracking-wide uppercase">
-                      {project.featured ? "Featured Project" : "Practice Project"}
+                      {project.featured
+                        ? "Featured Project"
+                        : "Practice Project"}
                     </div>
                     <CardTitle className="text-slate-100 text-3xl font-bold">
                       {project.title}

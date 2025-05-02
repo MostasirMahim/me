@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import EducationLoader from "./ui/EducationLoader";
 import { Star, Award, Calendar } from "lucide-react";
 
@@ -6,7 +6,6 @@ const EducationSection = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const educationData = [
-    
     {
       degree: "Higher Secondary Certificate (HSC)",
       school: "Pabna Islamia College",
@@ -15,15 +14,18 @@ const EducationSection = () => {
     },
     {
       degree: "Bachelor of Science (BSc)",
-      school: "Institute of Science and Trade Technology",
+      school: "Presidency University",
       mascot: "📘",
       achievements: ["Running CGPA: 3.35", "Subject: CSE"],
     },
   ];
 
   return (
-    <section className="min-h-screen bg-[#0f1629] py-40">
+    <section className="min-h-screen bg-[#0f1629] sm:py-40">    
       <div className="max-w-5xl mx-auto px-4">
+      <h2 className="sm:hidden text-4xl py-10 text-center md:text-6xl font-extrabold text-transparent bg-gradient-to-br from-indigo-400 via-purple-400 to-pink-500 bg-clip-text">
+          My Academic Journey
+        </h2>
         <div className="space-y-8">
           {educationData.map((edu, index) => (
             <div

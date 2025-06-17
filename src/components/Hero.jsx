@@ -6,6 +6,7 @@ import Meteors from "./ui/meteors";
 import PortfolioPage from "./PortfolioPage";
 import SparklesText from "./ui/sparkles-text";
 import { FlipWords } from "./ui/flip-words";
+import { FileUser, Github } from "lucide-react";
 
 // AnimatedGrid Component
 const AnimatedGrid = () => {
@@ -49,10 +50,10 @@ const AnimatedGrid = () => {
 
 export default function Hero() {
   const words = [
-    "Full-Stack Developer & ML Enthusiast",
-    "FAANG Is Dream",
+    "NextJS & ExpressJS Developer",
+    "Dream of Becoming a Tech Specialist",
     "Active Learner & Problem Solver",
-    "Lerning DSA & OOPs With Java",
+    "Learning Machine Learning",
   ];
 
   const [code] = useState(`
@@ -60,9 +61,10 @@ const profile = {
     name: 'Mostasir Mahim',
     title: 'Full-Stack Developer | ML Enthusiast | Problem Solver',
     skills: [
-        'React', 'NextJS', 'Socket', 'Express',
-        'PostgreSQL', 'MongoDB', 'Java', 'TailwindCSS',
-        'Github', 'Git', 'Zustand', 'Android Development'
+        'React', 'NextJS', 'Socket.io', 'ExpressJS',
+        'TypeScript', 'TailwindCSS', 'Tanstack Query',
+        'PostgreSQL', 'MongoDB', 'Prisma', 'MongoShell',
+        'Git', 'Zustand', 'Clerk', 'Formik', 'Shadcn', 'DaisyUI',
     ],
     hardWorker: true,
     quickLearner: true,
@@ -85,7 +87,7 @@ const profile = {
 
   return (
     <>
-      <main className="pt-20 lg:pt-[0rem] bg-[#0f1629] text-white min-h-screen">
+      <main className=" lg:pt-[0rem] bg-[#0f1629] text-white min-h-screen">
         <section className="hero min-h-screen flex items-center relative px-4 sm:px-6 lg:px-8">
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/50"></div>
 
@@ -142,34 +144,35 @@ const profile = {
               {/* Description */}
               <div className="relative mb-8 sm:mb-12 max-w-xl">
                 <p className="text-base sm:text-xl text-gray-300/90 leading-relaxed">
-                  JavaScript lover 🚀 | Problem Solving Gamer 🎯 | Backend frameworks
-                  and ML the future 💻✨
+                  Full-Stack Developer 🚀 | ML Enthusiast ✨ | Competitive Programmer 🎯 
                 </p>
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 animate__animated animate__fadeInUp animate__delay-2s">
+              <div className="flex flex-row gap-4 sm:gap-6 animate__animated animate__fadeInUp animate__delay-2s justify-around sm:justify-start">
                 {/* View Projects Button */}
                 <a
                   href="https://github.com/MostasirMahim"
-                  className="group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-blue-500 to-teal-400 p-0.5 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
+                  className="w-1/3 group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-blue-500 to-teal-400 p-0.5 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
                 >
                   <span className="block w-full px-6 sm:px-8 py-3 sm:py-4 rounded-[11px] bg-gray-900 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-teal-400">
                     <span className="relative flex items-center justify-center gap-2 text-white font-medium">
-                      <span>See More</span>
+                      <Github className="w-5 h-5" />
+                      <span>Github</span>
                       <i className="fas fa-arrow-right transform transition-all duration-300 group-hover:translate-x-1"></i>
                     </span>
                   </span>
                 </a>
 
-                {/* Contact Button */}
+                {/* CV Button */}
                 <a
                   href="https://drive.google.com/file/d/1aSlZHxdi-C1j2ydd73hTL9q1y4s1hKG3/view?usp=sharing"
-                  className="group relative inline-flex items-center justify-center gap-3 p-0.5 rounded-xl bg-gradient-to-r from-gray-800 to-gray-700 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
+                  className="w-1/3 group relative inline-flex items-center justify-center gap-3 p-0.5 rounded-xl bg-gradient-to-r from-pink-600 to-purple-500 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
                 >
-                  <span className="block w-full px-6 sm:px-8 py-3 sm:py-4 rounded-[11px] bg-gray-900 border border-gray-700/50 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-gray-800 group-hover:to-gray-700">
-                    <span className="relative flex items-center justify-center gap-2 text-gray-300 font-medium group-hover:text-white">
-                      <span>Get Resume</span>
+                  <span className="block w-full px-6 sm:px-8 py-3 sm:py-4 rounded-[11px] bg-gray-900 border border-gray-700/50 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-600">
+                    <span className="relative flex items-center justify-center gap-2 text-white font-medium group-hover:text-white">
+                      <FileUser className="w-5 h-5" />
+                      <span>Resume</span>
                       <i className="fas fa-envelope transform transition-all duration-300 group-hover:rotate-12"></i>
                     </span>
                   </span>

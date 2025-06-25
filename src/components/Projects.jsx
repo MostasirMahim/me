@@ -3,6 +3,7 @@ import maraz from "../assets/images/maraz1.png";
 import mahimx from "../assets/images/mahimx1.png";
 import whatsup from "../assets/images/whtasup.png";
 import mahimai from "../assets/images/mahimai.png";
+import sokal from "../assets/images/dainikSokal.png";
 import Geng from "../assets/images/geng.png";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -57,6 +58,23 @@ const ProjectShowcase = () => {
         demo: "https://maraz.onrender.com",
       },
       image: maraz,
+      featured: true,
+    },
+    {
+      title: "Dainik Sokal - Newspaper Front UI",
+      description:
+        "A clean and responsive news UI built with Next.js and TailwindCSS, focused on performance and standard layout practices.",
+      tags: [
+         "NextJs",
+        "TypeScript",
+        "Tailwind",
+        "Shadcn",
+      ],
+      links: {
+        github: "https://github.com/MostasirMahim/Dainik-Sokal",
+        demo: "https://dainik-sokal.vercel.app",
+      },
+      image: sokal,
       featured: true,
     },
     {
@@ -124,7 +142,7 @@ const ProjectShowcase = () => {
 
   return (
     <div className="sm:pt-40 min-h-screen bg-[#0f1629] p-8 text-slate-100 ">
-      <h2 className="sm:hidden text-4xl py-4 text-center md:text-6xl font-extrabold text-transparent bg-gradient-to-br from-indigo-400 via-purple-400 to-pink-500 bg-clip-text">
+      <h2 className="sm:hidden text-4xl py-4 mb-2 text-center md:text-6xl font-extrabold text-transparent bg-gradient-to-br from-green-400 via-sky-400 to-green-500 bg-clip-text">
         My Projects
       </h2>
       <div className="max-w-7xl mx-auto space-y-12">
@@ -143,7 +161,7 @@ const ProjectShowcase = () => {
             </div>
 
             {/* Text Section */}
-            <Card className="md:w-1/2 bg-gradient-to-br from-slate-800 to-gray-900 rounded-lg overflow-hidden shadow-md transition-transform duration-500 group-hover:scale-105 group-hover:shadow-2xl p-6">
+            <Card className="md:w-1/2 bg-gradient-to-br from-slate-800 to-gray-900 rounded-lg overflow-hidden shadow-md transition-transform duration-500 group-hover:scale-105 group-hover:shadow-2xl p-2 sm:p-6">
               <MacOsButtons />
 
               <CardHeader>
@@ -154,7 +172,7 @@ const ProjectShowcase = () => {
                         ? "Featured Project"
                         : "Practice Project"}
                     </div>
-                    <CardTitle className="text-slate-100 text-3xl font-bold">
+                    <CardTitle className="text-slate-100 text-2xl sm:text-3xl font-bold">
                       {project.title}
                     </CardTitle>
                   </div>

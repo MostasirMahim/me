@@ -1,5 +1,5 @@
 import  { useState } from "react";
-import { Send, MapPin, Mail } from "lucide-react";
+import { Send, MapPin, Mail, Facebook, Linkedin } from "lucide-react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -49,7 +49,7 @@ export default function Contact() {
   };
 
   return (
-    <main className="sm:pt-24 lg:pt-[0rem] bg-[#0f1629] text-white min-h-screen">
+    <main className="pt-10 sm:pt-24 lg:pt-[0rem] bg-[#0f1629] text-white min-h-screen">
        
       <section className="hero min-h-screen flex items-center relative px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto">
@@ -67,6 +67,24 @@ export default function Contact() {
               </div>
 
               <div className="space-y-6">
+                <div onClick={()=> window.location.href = "https://www.facebook.com/MostasirMahim"} className="flex items-center space-x-4 cursor-pointer">
+                  <div className="bg-purple-500/10 p-3 rounded-lg ">
+                    <Facebook className="w-6 h-6 text-purple-400" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold">Facebook</h3>
+                    <p className="text-gray-400">@mostasirmahim</p>
+                  </div>
+                </div>
+                <div onClick={()=>  window.location.href = 'https://www.linkedin.com/in/mostasirmahim/'} className="flex items-center space-x-4 cursor-pointer">
+                  <div className="bg-purple-500/10 p-3 rounded-lg ">
+                    <Linkedin className="w-6 h-6 text-purple-400" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold">Linkedin</h3>
+                    <p className="text-gray-400">Mostasir Mahim</p>
+                  </div>
+                </div>
                 <div className="flex items-center space-x-4">
                   <div className="bg-purple-500/10 p-3 rounded-lg">
                     <Mail className="w-6 h-6 text-purple-400" />

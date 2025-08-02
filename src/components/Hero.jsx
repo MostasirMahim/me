@@ -87,7 +87,7 @@ const profile = {
 
   return (
     <>
-      <main className=" lg:pt-[0rem] bg-[#0f1629] text-white min-h-screen">
+      <main className="pt-20 lg:pt-[0rem] bg-[#0f1629] text-white min-h-screen">
         <section className="hero min-h-screen flex items-center relative px-4 sm:px-6 lg:px-8">
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-gray-900/50"></div>
 

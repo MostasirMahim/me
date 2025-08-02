@@ -30,7 +30,7 @@ const EducationSection = () => {
   ];
 
   return (
-    <section className="min-h-screen bg-[#0f1629] sm:py-40">    
+    <section className="min-h-screen bg-[#0f1629] py-40">    
       <div className="max-w-5xl mx-auto px-4">
       <h2 className="sm:hidden text-4xl py-10 text-center md:text-6xl font-extrabold text-transparent bg-gradient-to-br from-green-400 via-sky-400 to-green-500 bg-clip-text">
           My Academic Journey

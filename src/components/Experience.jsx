@@ -64,20 +64,13 @@ const ExperienceSection = () => {
     },
     {
       icon: Layers,
-      title: "Junior Web Developer",
-      company: "CoderCrash IT",
-      period: "2024 - Present",
+      title: "Trainee Web Developer",
+      company: "Pepoltek Ltd.",
+      period: "2025 - Present",
       description:
-        "Assisted in building and optimizing user interfaces with a focus on responsive and interactive designs.",
+        "Working as a Trainee Web Developer and also working on a project for a company.",
     },
-    {
-      icon: Code2,
-      title: "Freelance Developer",
-      company: "Upwork",
-      period: "2024 - Present",
-      description:
-        "Contributed to developing and maintaining web applications using React, Next.js, and Tailwind CSS.",
-    },
+
   ];
 
   return (

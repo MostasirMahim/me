@@ -144,7 +144,7 @@ const ProjectShowcase = () => {
   ];
 
   return (
-    <div className="pt-40 min-h-screen bg-[#0f1629] p-8 text-slate-100 ">
+    <div className="pt-20 min-h-screen bg-[#0f1629] p-8 text-slate-100 ">
       <h2 className="sm:hidden text-4xl py-4 mb-2 text-center md:text-6xl font-extrabold text-transparent bg-gradient-to-br from-green-400 via-sky-400 to-green-500 bg-clip-text">
         My Projects
       </h2>

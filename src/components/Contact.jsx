@@ -49,7 +49,7 @@ export default function Contact() {
   };
 
   return (
-    <main className="pt-10 sm:pt-24 lg:pt-[0rem] bg-[#0f1629] text-white min-h-screen">
+    <main className="pt-20 lg:pt-[0rem] bg-[#0f1629] text-white min-h-screen">
        
       <section className="hero min-h-screen flex items-center relative px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto">

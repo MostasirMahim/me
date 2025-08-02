@@ -9,21 +9,30 @@ const EducationSection = () => {
     {
       degree: "Higher Secondary Certificate (HSC)",
       school: "Pabna Islamia College",
+      year: "2022",
       mascot: "📗",
       achievements: ["GPA: 5.00", "Subject: Science"],
     },
     {
       degree: "Bachelor of Science (BSc)",
       school: "Presidency University",
+      year: "2023-2027",
       mascot: "📘",
       achievements: ["Running CGPA: 3.35", "Subject: CSE"],
+    },
+    {
+      degree: "CSE Fundamentals with Phitron",
+      school: "Phitron",
+      year: "Spring 2025",
+      mascot: "💻",
+      achievements: ["Semester : 2nd", "Course: DSA"],
     },
   ];
 
   return (
     <section className="min-h-screen bg-[#0f1629] sm:py-40">    
       <div className="max-w-5xl mx-auto px-4">
-      <h2 className="sm:hidden text-4xl py-10 text-center md:text-6xl font-extrabold text-transparent bg-gradient-to-br from-indigo-400 via-purple-400 to-pink-500 bg-clip-text">
+      <h2 className="sm:hidden text-4xl py-10 text-center md:text-6xl font-extrabold text-transparent bg-gradient-to-br from-green-400 via-sky-400 to-green-500 bg-clip-text">
           My Academic Journey
         </h2>
         <div className="space-y-8">

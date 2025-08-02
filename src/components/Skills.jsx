@@ -90,7 +90,7 @@ const SkillsSection = () => {
   return (
     <main className="sm:pt-16 lg:pt-0 bg-[#0f1629] text-white min-h-screen">
       <section className="container mx-auto p-4">
-        <h2 className="sm:hidden text-4xl text-center md:text-6xl font-extrabold text-transparent bg-gradient-to-br from-indigo-400 via-purple-400 to-pink-500 bg-clip-text">
+        <h2 className="sm:hidden text-4xl text-center md:text-6xl font-extrabold text-transparent bg-gradient-to-br from-green-400 via-sky-400 to-green-500 bg-clip-text">
           My Skills
         </h2>
         <div className="flex justify-center items-center">

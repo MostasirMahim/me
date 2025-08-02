@@ -56,7 +56,7 @@ const SkillsSection = () => {
       icon: Cloud,
       title: "Cloud & DevOps",
       color: "text-orange-400",
-      skills: ["Render", "Vercel", "Netlify", "Git", "GitHub"],
+      skills: ["Render", "Vercel", "Netlify", "GitHub"],
     },
     {
       icon: Cpu,
@@ -70,6 +70,8 @@ const SkillsSection = () => {
         "Firebase",
         "Vercel",
         "Vite",
+        "Docker",
+        "Git",
       ],
     },
     {

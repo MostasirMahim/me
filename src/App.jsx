@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Hero from "./components/Hero";
 import "./assets/css/index.css";
 import Header from "./components/Header";
@@ -11,16 +11,17 @@ import { Route, Routes } from "react-router-dom";
 
 export default function App() {
   const [isOnePage, setIsOnePage] = useState(false); // Toggle state
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 639px)");
-    const handleChange = (e) => setIsOnePage(e.matches);
 
-    // Initial check
-    setIsOnePage(mediaQuery.matches);
-    mediaQuery.addEventListener("change", handleChange);
+  // useEffect(() => {
+  //   const mediaQuery = window.matchMedia("(max-width: 639px)");
+  //   const handleChange = (e) => setIsOnePage(e.matches);
 
-    return () => mediaQuery.removeEventListener("change", handleChange);
-  }, []);
+  //   // Initial check
+  //   setIsOnePage(mediaQuery.matches);
+  //   mediaQuery.addEventListener("change", handleChange);
+
+  //   return () => mediaQuery.removeEventListener("change", handleChange);
+  // }, []);
   return (
     <>
       <Header />

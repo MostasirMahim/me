@@ -64,7 +64,7 @@ const profile = {
         'React', 'NextJS', 'Socket.io', 'ExpressJS',
         'TypeScript', 'TailwindCSS', 'Tanstack Query',
         'PostgreSQL', 'MongoDB', 'Prisma', 'MongoShell',
-        'Git', 'Zustand', 'Clerk', 'Formik', 'Shadcn', 'DaisyUI',
+        'Git', 'Docker', 'Clerk', 'Neon', 'Shadcn', 'DaisyUI',
     ],
     hardWorker: true,
     quickLearner: true,
@@ -166,7 +166,7 @@ const profile = {
 
                 {/* CV Button */}
                 <a
-                  href="https://drive.google.com/file/d/1RNK88UlYtqJqfrNp8yN5bqhlYrvT-IOV/view?usp=sharing"
+                  href="https://drive.google.com/file/d/10wDI5jKNSOfzgf82aLNo5C2EkUv4Mp9J/view?usp=sharing"
                   className="w-1/3 group relative inline-flex items-center justify-center gap-3 p-0.5 rounded-xl bg-gradient-to-r from-pink-600 to-purple-500 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
                 >
                   <span className="block w-full px-6 sm:px-8 py-3 sm:py-4 rounded-[11px] bg-gray-900 border border-gray-700/50 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-purple-600">
